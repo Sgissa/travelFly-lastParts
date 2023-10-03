@@ -1,0 +1,210 @@
+.special-offer{
+    height: 709px;
+    max-width: 980px;
+    // background-color: aqua;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    .special-header {
+        margin-top: 64px;
+        // background-color: aquamarine;
+        width: 332px;
+        height: 40px;
+
+        .header-text {
+            font-size: 30px;
+            font-family: Gill Sans;
+            // background-color: bisque;
+        }
+
+        .header-border {
+            // background-color: blueviolet;
+            width: 199px;
+            // height: 30px;
+            border-bottom: 3px solid black;
+            margin-top: -10px;
+        }
+
+
+    }
+
+
+}
+
+.content {
+    margin-top: 35px;
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+
+    // background-color: green;
+    .left {
+        height: 287px;
+        width: 199px;
+        // background-color: antiquewhite;
+    }
+
+    .right {
+        width: 335px;
+        height: 287px;
+        // background-color: greenyellow;
+
+        .content-title {
+            height: 40px;
+            width: 335px;
+            // background-color: brown;
+
+            .title-text{
+                font-size: 30px;
+                font-family: Gill Sans;
+
+            }
+
+            .title-border {
+                // background-color: blueviolet;
+                width: 196px;
+                border-bottom: 3px solid black;
+                margin-top: -10px;
+        
+            }
+        }
+
+        .content-textbox{
+            width: 290px;
+            height: 131px;
+            // background-color: aliceblue;
+            margin-top: 21px;
+
+            .textbox-text {
+                font-family: Gill Sans;
+                font-size: 16px;
+            }
+        }
+
+        .learn-more {
+            @include site-button ;
+            width: 133px;
+            height: 40px;
+            margin-top: 52px;
+            .learn-text {
+                font-family: Gill Sans;
+                font-size: 15px;
+                color: white;
+            }
+
+        }
+    }
+}
+
+.content2 {
+    margin-top: 35px;
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+
+    // background-color: green;
+    .left {
+        height: 287px;
+        width: 199px;
+        // background-color: antiquewhite;
+    }
+
+    .right {
+        width: 335px;
+        height: 287px;
+        // background-color: greenyellow;
+
+        .content-title {
+            height: 40px;
+            min-width: 335px;
+            // background-color: brown;
+
+            .title-text{
+                font-size: 30px;
+                font-family: Gill Sans;
+
+            }
+
+            .title-border {
+                background-color: blueviolet;
+                width: 196px;
+                border-bottom: 3px solid black;
+                margin-top: -10px;
+        
+            }
+        }
+
+        .content-textbox{
+            width: 290px;
+            height: 131px;
+            // background-color: aliceblue;
+            margin-top: 21px;
+
+            .textbox-text {
+                font-family: Gill Sans;
+                font-size: 16px;
+            }
+        }
+
+        .learn-more {
+            @include site-button ;
+            width: 133px;
+            height: 40px;
+            margin-top: 52px;
+            .learn-text {
+                font-family: Gill Sans;
+                font-size: 15px;
+                color: white;
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 995px) {
+
+    .special-offer {
+        // background-color: antiquewhite;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .special-offer {
+        // background-color: blue;
+        padding-left: 10px;
+        min-height: 1250px;
+        padding-top: 10px;
+
+        .special-header {
+            margin: 0 auto;
+            
+        }
+
+        .content {
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 10px;
+            .left{
+                margin-top: 10px;
+            }
+
+        }
+
+        .content2 {
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 10px;
+            .left{
+                margin-top: 10px;
+            }
+
+        }
+
+    }
+}
+

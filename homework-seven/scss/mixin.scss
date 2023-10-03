@@ -1,0 +1,18 @@
+@mixin site-button($radius: 30px) {
+    background-color: #79addc;
+    border-radius: $radius;
+    color: #fff;
+    padding: 11px 21px;
+    border: none;
+}
+
+@mixin blog-date {
+
+    background-color: #79addc;
+    color:white;
+    border: none;
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-left: 17px;
+}
+

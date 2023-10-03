@@ -1,0 +1,63 @@
+.foot{
+    height: 100px;
+    width: 100%;
+    background-color: #79addc;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .logo {
+        width: 92px;
+        height: 42px;
+        // background-color: chocolate;
+        border: 3px solid white;
+        
+
+        .logotext {
+            color: white;
+            padding-top: 21px;
+        }
+
+    }
+
+    .copyright {
+
+
+        .copy{
+            color: white;
+        }
+    }
+
+
+    .socials {
+        width: 110px;
+        height: 22px;
+        // background-color: bisque;
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            width: 22px;
+            height: 22px;
+            // background-color: aqua;
+        }
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    .foot {
+    //   background-color: greenyellow;
+      max-width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+      .copyright{
+       margin-left: 5px;
+      }
+    }
+  }

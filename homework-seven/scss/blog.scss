@@ -1,0 +1,123 @@
+.blog {
+    width: 980px;
+    margin: 0 auto;
+    // background-color: aqua;
+  .blog-header{
+//    background-color: antiquewhite;
+    margin-top: 65px;
+    height: 40px;
+    max-width: 104px;
+    .blog-text{
+        font-family: proxi;
+        font-size: 30px;
+        border-bottom: solid black;
+    }
+  }  
+
+  .blog-content {
+    width: 980px;
+    min-height: 376px;
+    // background-color: goldenrod;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+        // background-color: blueviolet;
+        max-width: 60px;
+        height: 60px;
+
+        .date{
+            @include blog-date;
+            height: 60px;
+            width: 60px;
+            .date-number{
+                font-family: Gill Sans;
+                font-size: 22px;
+            }
+
+            .date-month{
+                font-family:  GS-L;
+                font-size: 12px;
+                margin-top: -15px;
+                
+            }
+
+        }
+    }
+
+    .right{
+        // background-color: cadetblue;
+        max-width: 900px;
+        // height: 60px;
+
+        .pic-holder{
+            max-width: 900px;
+            // height: 259px;
+            // background-color: aquamarine;
+            img {
+                width: 100%;
+            }
+        }
+
+        .subtitle {
+            max-width: 245;
+            height: 22px;
+            // background-color: bisque;
+            margin-top: 20px;
+            .sub-text{
+                font-size: 15px;
+                font-family: Gill Sans ;
+            }
+        }
+
+        .textbox{
+            max-width: 380px;
+            height: 64px;
+            // background-color: brown;
+            margin-top: 11px;
+            .textbox-text {
+                font-size: 13px;
+                font-family: Gill Sans ;
+                color: #79ADDC;
+            }
+        }
+
+    }
+  }
+   
+}
+
+
+@media only screen and (max-width:980px){
+    .blog{
+    //   background-color: red;
+        max-width: 100%;
+        padding-top: 65px;
+      .blog-header{
+        margin: 0 auto;
+      }
+
+      .blog-content{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        .left{
+            margin-bottom: 15px;
+        }
+
+        .right {
+            width: 80%;
+            .pic-holder{
+                width: 400px;
+                
+            }
+        }
+      }
+
+      
+    }
+    
+    
+}
